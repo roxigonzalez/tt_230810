@@ -1,0 +1,416 @@
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: localhost
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: localhost
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: localhost
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: localhost
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: localhost
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: localhost
+Started GET "/" for ::1 at 2023-10-08 18:13:31 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /opt/homebrew/lib/ruby/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /opt/homebrew/lib/ruby/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 501)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2748)
+
+
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddServiceNameToActiveStorageBlobs (20231009001706)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231009001706"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageVariantRecords (20231009001707)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231009001707"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveNotNullOnActiveStorageBlobsChecksum (20231009001708)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231009001708"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20231009001818)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "description" text, "vendor" varchar, "price" integer NOT NULL, "currency" varchar, "stock" integer, "image_url" varchar, "sku" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231009001818"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-10-09 00:22:50.558196"], ["updated_at", "2023-10-09 00:22:50.558196"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.9ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "vendor", "price", "currency", "stock", "image_url", "sku", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "lala"], ["description", "lala"], ["vendor", nil], ["price", 100], ["currency", "USD"], ["stock", nil], ["image_url", nil], ["sku", nil], ["created_at", "2023-10-09 00:24:55.404335"], ["updated_at", "2023-10-09 00:24:55.404335"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2023-10-08 18:25:06 -0600
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 4 pending migrations:
+
+20231009001706_add_service_name_to_active_storage_blobs.active_storage.rb
+20231009001707_create_active_storage_variant_records.active_storage.rb
+20231009001708_remove_not_null_on_active_storage_blobs_checksum.active_storage.rb
+20231009001818_create_products.rb
+
+
+):
+  
+activerecord (7.0.4.3) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.3) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.3) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.3) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2023-10-08 18:25:06 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 4 pending migrations:
+
+20231009001706_add_service_name_to_active_storage_blobs.active_storage.rb
+20231009001707_create_active_storage_variant_records.active_storage.rb
+20231009001708_remove_not_null_on_active_storage_blobs_checksum.active_storage.rb
+20231009001818_create_products.rb
+
+
+):
+  
+activerecord (7.0.4.3) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.3) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.3) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.3) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2023-10-08 18:25:13 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddServiceNameToActiveStorageBlobs (20231009001706)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231009001706"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageVariantRecords (20231009001707)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231009001707"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveNotNullOnActiveStorageBlobsChecksum (20231009001708)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231009001708"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20231009001818)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "description" text, "vendor" varchar, "price" integer NOT NULL, "currency" varchar, "stock" integer, "image_url" varchar, "sku" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231009001818"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-10-09 00:25:13.453405"], ["updated_at", "2023-10-09 00:25:13.453405"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-10-08 18:25:13 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /opt/homebrew/lib/ruby/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /opt/homebrew/lib/ruby/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 287)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1182)
+
+
+Started GET "/products" for ::1 at 2023-10-08 18:25:21 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1964)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-10-08 18:25:21 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/products" for ::1 at 2023-10-08 18:25:34 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 6.1ms | ActiveRecord: 0.5ms | Allocations: 11753)
+
+
+Started GET "/products" for ::1 at 2023-10-08 18:26:18 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 935)
+
+
+Started GET "/products/1" for ::1 at 2023-10-08 18:26:27 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:4:in `show'
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 2778)
+
+
+Started GET "/products/2" for ::1 at 2023-10-08 18:26:31 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:4:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 589)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=2):
+  
+app/controllers/products_controller.rb:4:in `show'
+Started GET "/products" for ::1 at 2023-10-08 18:30:47 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:10:in `index'
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 2.9ms | Allocations: 5266)
+
+
+Started GET "/products.xml" for ::1 at 2023-10-08 18:30:50 -0600
+Processing by ProductsController#index as XML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:10:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 844)
+
+
+Started GET "/products.xml" for ::1 at 2023-10-08 18:30:52 -0600
+Processing by ProductsController#index as XML
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:10:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 826)
+
+
+Started GET "/products/1.xml" for ::1 at 2023-10-08 18:31:11 -0600
+Processing by ProductsController#show as XML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5:in `show'
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:6:in `show'
+Completed 500 Internal Server Error in 24ms (Views: 3.7ms | ActiveRecord: 2.0ms | Allocations: 1410)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/products_controller.rb:6:in `show'
+Started GET "/products/1.xml" for ::1 at 2023-10-08 18:32:40 -0600
+Processing by ProductsController#show as XML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5:in `show'
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 5111)
+
+
+Started GET "/products/1.xml" for ::1 at 2023-10-08 18:33:01 -0600
+Processing by ProductsController#show as XML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5:in `show'
+Completed 200 OK in 34ms (Views: 0.6ms | ActiveRecord: 0.9ms | Allocations: 6001)
+
+
+Started GET "/products/2.xml" for ::1 at 2023-10-08 18:33:27 -0600
+Processing by ProductsController#show as XML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5:in `show'
+Completed 404 Not Found in 10ms (ActiveRecord: 1.4ms | Allocations: 2565)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=2):
+  
+app/controllers/products_controller.rb:5:in `show'
+Started GET "/products/2.xml" for ::1 at 2023-10-08 18:33:44 -0600
+Processing by ProductsController#show as XML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5:in `show'
+Completed 500 Internal Server Error in 20ms (Views: 0.5ms | ActiveRecord: 1.0ms | Allocations: 2638)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/products_controller.rb:12:in `show'
+Started GET "/products/2.xml" for ::1 at 2023-10-08 18:33:55 -0600
+Processing by ProductsController#show as XML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5:in `show'
+Completed 500 Internal Server Error in 5ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 2545)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/products_controller.rb:12:in `show'
+Started GET "/products/2.xml" for ::1 at 2023-10-08 18:34:12 -0600
+Processing by ProductsController#show as XML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5:in `show'
+Completed 500 Internal Server Error in 15ms (Views: 0.6ms | ActiveRecord: 1.1ms | Allocations: 2542)
+
+
+  
+ActionController::RespondToMismatchError (respond_to was called multiple times and matched with conflicting formats in this action. Please note that you may only call respond_to and match on a single format per action.):
+  
+app/controllers/products_controller.rb:12:in `show'
+Started GET "/products/2.xml" for ::1 at 2023-10-08 18:34:22 -0600
+Processing by ProductsController#show as XML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5:in `show'
+Completed 404 Not Found in 7ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 2421)
+
+
+Started GET "/products.xml" for ::1 at 2023-10-08 18:34:30 -0600
+Processing by ProductsController#index as XML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:23:in `block (2 levels) in index'
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.6ms | Allocations: 4428)
+
+
+Started POST "/products" for ::1 at 2023-10-08 18:37:00 -0600
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"Nombre del producto", "description"=>"Descripción del producto", "vendor"=>"Nombre del proveedor", "price"=>1999, "currency"=>"USD", "stock"=>100, "image_url"=>"https://ejemplo.com/imagen-del-producto.jpg", "sku"=>"SKU123456789", "product"=>{"name"=>"Nombre del producto", "description"=>"Descripción del producto", "vendor"=>"Nombre del proveedor", "price"=>1999, "currency"=>"USD", "stock"=>100, "image_url"=>"https://ejemplo.com/imagen-del-producto.jpg", "sku"=>"SKU123456789"}}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 3214)
+
+
+  
+NameError (undefined local variable or method `product_params' for #<ProductsController:0x00000000012ed0>
+Did you mean?  product_path):
+  
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for ::1 at 2023-10-08 18:37:42 -0600
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"Nombre del producto", "description"=>"Descripción del producto", "vendor"=>"Nombre del proveedor", "price"=>1999, "currency"=>"USD", "stock"=>100, "image_url"=>"https://ejemplo.com/imagen-del-producto.jpg", "sku"=>"SKU123456789", "product"=>{"name"=>"Nombre del producto", "description"=>"Descripción del producto", "vendor"=>"Nombre del proveedor", "price"=>1999, "currency"=>"USD", "stock"=>100, "image_url"=>"https://ejemplo.com/imagen-del-producto.jpg", "sku"=>"SKU123456789"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/services/create_product.rb:13:in `call'
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "vendor", "price", "currency", "stock", "image_url", "sku", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Nombre del producto"], ["description", "Descripción del producto"], ["vendor", "Nombre del proveedor"], ["price", 1999], ["currency", "USD"], ["stock", 100], ["image_url", "https://ejemplo.com/imagen-del-producto.jpg"], ["sku", "SKU123456789"], ["created_at", "2023-10-09 00:37:42.109442"], ["updated_at", "2023-10-09 00:37:42.109442"]]
+  ↳ app/services/create_product.rb:13:in `call'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/services/create_product.rb:13:in `call'
+Completed 201 Created in 8ms (Views: 0.3ms | ActiveRecord: 6.9ms | Allocations: 5552)
+
+
+Started PUT "/products/:id?=1" for ::1 at 2023-10-08 18:38:20 -0600
+Processing by ProductsController#update as */*
+  Parameters: {"name"=>"Nombre1", "description"=>"Descripción del producto", "vendor"=>"Nombre del proveedor1", "price"=>199, "currency"=>"USD", "stock"=>100, "image_url"=>"https://ejemplo.com/imagen-del-producto1.jpg", "sku"=>"SKU123456789", "id"=>":id", "product"=>{"name"=>"Nombre1", "description"=>"Descripción del producto", "vendor"=>"Nombre del proveedor1", "price"=>199, "currency"=>"USD", "stock"=>100, "image_url"=>"https://ejemplo.com/imagen-del-producto1.jpg", "sku"=>"SKU123456789"}}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39:in `update'
+Completed 404 Not Found in 13ms (ActiveRecord: 0.4ms | Allocations: 2185)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=:id):
+  
+app/controllers/products_controller.rb:39:in `update'
+Started PUT "/products/1" for ::1 at 2023-10-08 18:38:33 -0600
+Processing by ProductsController#update as */*
+  Parameters: {"name"=>"Nombre1", "description"=>"Descripción del producto", "vendor"=>"Nombre del proveedor1", "price"=>199, "currency"=>"USD", "stock"=>100, "image_url"=>"https://ejemplo.com/imagen-del-producto1.jpg", "sku"=>"SKU123456789", "id"=>"1", "product"=>{"name"=>"Nombre1", "description"=>"Descripción del producto", "vendor"=>"Nombre del proveedor1", "price"=>199, "currency"=>"USD", "stock"=>100, "image_url"=>"https://ejemplo.com/imagen-del-producto1.jpg", "sku"=>"SKU123456789"}}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/services/update_product.rb:13:in `call'
+  [1m[36mProduct Update (1.3ms)[0m  [1m[33mUPDATE "products" SET "name" = ?, "description" = ?, "vendor" = ?, "price" = ?, "stock" = ?, "image_url" = ?, "sku" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["name", "Nombre1"], ["description", "Descripción del producto"], ["vendor", "Nombre del proveedor1"], ["price", 199], ["stock", 100], ["image_url", "https://ejemplo.com/imagen-del-producto1.jpg"], ["sku", "SKU123456789"], ["updated_at", "2023-10-09 00:38:33.648582"], ["id", 1]]
+  ↳ app/services/update_product.rb:13:in `call'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/services/update_product.rb:13:in `call'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.5ms | Allocations: 2789)
+
+
+Started DELETE "/products/2" for ::1 at 2023-10-08 18:39:09 -0600
+Processing by ProductsController#destroy as */*
+  Parameters: {"name"=>"Nombre1", "description"=>"Descripción del producto", "vendor"=>"Nombre del proveedor1", "price"=>199, "currency"=>"USD", "stock"=>100, "image_url"=>"https://ejemplo.com/imagen-del-producto1.jpg", "sku"=>"SKU123456789", "id"=>"2", "product"=>{"name"=>"Nombre1", "description"=>"Descripción del producto", "vendor"=>"Nombre del proveedor1", "price"=>199, "currency"=>"USD", "stock"=>100, "image_url"=>"https://ejemplo.com/imagen-del-producto1.jpg", "sku"=>"SKU123456789"}}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:48:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:48:in `destroy'
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/products_controller.rb:48:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:48:in `destroy'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.9ms | Allocations: 2033)
+
+
+Started GET "/products" for ::1 at 2023-10-08 18:40:26 -0600
+Processing by ProductsController#index as XML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:23:in `block (2 levels) in index'
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.9ms | Allocations: 5957)
+
+
